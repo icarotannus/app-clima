@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #fef8e4; /* Define a cor de fundo para um amarelo claro */
+  background: #eee4c4; /* Define a cor de fundo para um amarelo claro */
   color: #444; /* Define a cor do texto em um tom de cinza escuro */
   display: flex; /* Aplica o layout Flexbox ao body */
   justify-content: center; /* Centraliza os itens horizontalmente */
@@ -115,7 +115,7 @@ body {
 .pesquisa input {
   border: 2px solid rgba(0, 0, 0, 0.1); /* Adiciona uma borda leve ao campo de input */
   outline: none; /* Remove o contorno padrão do campo */
-  background-color: #fff; /* Define o fundo do campo como branco */
+  background-color: #f8f3e3; /* Define o fundo do campo como branco */
   color: #333; /* Define a cor do texto como cinza escuro */
   padding: 10px 20px; /* Adiciona espaçamento interno ao campo */
   height: 50px; /* Define uma altura fixa para o campo */
@@ -133,7 +133,7 @@ body {
 .pesquisa button {
   border: none; /* Remove a borda do botão */
   outline: none; /* Remove o contorno padrão do botão */
-  background-color: #fff; /* Define o fundo do botão como branco */
+  background-color: #f8f3e3; /* Define o fundo do botão como branco */
   border-radius: 50%; /* Faz o botão ter formato circular */
   width: 50px; /* Define a largura do botão */
   height: 50px; /* Define a altura do botão */
