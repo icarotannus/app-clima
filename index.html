@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo/logo-app.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>App de Clima</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aplicativo de Clima</h1>
+      <div class="clima oculto">
+        <img src="./assets/Icon/icone-chuva.png" class="icone-clima" />
+        <h1 class="temp">??°C</h1>
+        <h2 class="city">Cidade</h2>
+        <div class="container-elementosClima">
+          <div class="container-elemento">
+            <img src="./assets/Icon/icone-humidade.png" />
+            <div>
+              <p class="humidity">??%</p>
+              <p>Humidade</p>
+            </div>
+          </div>
+          <div class="container-elemento">
+            <img src="./assets/Icon/icone-vento.png" />
+            <div>
+              <p class="wind">?? km/h</p>
+              <p>Velocidade do Vento</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pesquisa">
+        <input
+          type="text"
+          placeholder="Escolha a Cidade"
+          spellcheck="false"
+          required
+        />
+        <button>
+          <img src="./assets/Icon/icone-pesquisa.png" alt="Lupa de Pesquisa" />
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

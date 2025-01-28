@@ -1,0 +1,198 @@
+/* Reset */
+* {
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos */
+  font-family: "Funnel Display", sans-serif; /* Define a fonte padrão para todos os elementos */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo de largura e altura dos elementos */
+}
+
+body {
+  background: #fef8e4; /* Define a cor de fundo do body (amarelo bem claro) */
+  color: #444; /* Define a cor do texto para um tom de cinza escuro */
+  display: flex; /* Usa Flexbox para o layout do body */
+  justify-content: center; /* Centraliza horizontalmente os itens */
+  align-items: flex-start; /* Alinha os itens ao topo da tela */
+  min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+  padding: 7px; /* Aplica um pequeno padding ao redor da tela */
+  line-height: 1.6; /* Define o espaçamento entre linhas de texto para melhor legibilidade */
+  overflow: hidden; /* Impede o conteúdo de transbordar na tela */
+}
+
+.container {
+  width: 100%; /* Faz o container ocupar 100% da largura disponível */
+  max-width: 470px; /* Limita a largura máxima do container a 470px */
+  background: linear-gradient(
+    135deg,
+    #fdf1b1,
+    #fce3a5
+  ); /* Aplica um gradiente suave de amarelo no fundo */
+  color: #333; /* Define a cor do texto para um tom escuro de cinza */
+  margin: 0; /* Remove a margem ao redor do container */
+  border-radius: 20px; /* Aplica bordas arredondadas no container */
+  padding: 40px 35px; /* Aplica padding interno do container */
+  text-align: center; /* Centraliza o conteúdo dentro do container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aplica uma sombra suave ao redor do container */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo de largura e altura */
+  overflow: hidden; /* Impede que o conteúdo transborde dentro do container */
+  max-height: 100vh; /* Limita a altura máxima do container à altura da tela */
+  overflow-y: auto; /* Permite rolar o conteúdo verticalmente se ele exceder a altura */
+}
+
+.container h1 {
+  font-size: 40px; /* Define o tamanho da fonte do h1 */
+}
+
+.clima.oculto {
+  display: none; /* Esconde elementos com a classe "oculto" */
+}
+
+/* Previsão */
+.icone-clima {
+  width: 100%; /* Faz o ícone de clima ocupar 100% da largura disponível */
+  max-width: 140px; /* Limita a largura máxima do ícone */
+  margin: 0 auto; /* Centraliza o ícone horizontalmente */
+  transition: transform 0.3s ease; /* Aplica transição suave quando o ícone for transformado */
+  padding-top: 10px; /* Aplica padding superior ao ícone */
+}
+
+.clima h1 {
+  font-size: clamp(
+    32px,
+    6vw,
+    55px
+  ); /* Define o tamanho da fonte de forma responsiva */
+  font-weight: 500; /* Define o peso da fonte como médio */
+  margin-bottom: 10px; /* Aplica margem inferior ao h1 */
+  color: #000000; /* Define a cor do texto para preto */
+}
+
+.clima h2 {
+  font-size: clamp(
+    24px,
+    5vw,
+    40px
+  ); /* Define o tamanho da fonte de forma responsiva */
+  font-weight: 700; /* Define o peso da fonte como negrito */
+  margin-bottom: 20px; /* Aplica margem inferior ao h2 */
+  color: #000000; /* Define a cor do texto para preto */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Aplica uma sombra sutil no texto para destaque */
+}
+
+.container-elementosClima {
+  display: flex; /* Utiliza Flexbox para o layout */
+  align-items: center; /* Alinha os itens no centro verticalmente */
+  justify-content: space-between; /* Distribui os itens com o máximo de espaço entre eles */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
+  gap: 20px; /* Define um espaço de 20px entre os itens */
+  margin-top: 40px; /* Aplica margem superior ao container */
+}
+
+.container-elemento {
+  display: flex; /* Utiliza Flexbox para o layout do item */
+  align-items: center; /* Alinha os itens dentro do elemento no centro verticalmente */
+  text-align: left; /* Alinha o texto à esquerda */
+  flex: 1; /* Faz o item ocupar espaço proporcional dentro do container */
+  min-width: 140px; /* Define a largura mínima do item */
+}
+
+.container-elemento img {
+  width: 50px; /* Define a largura da imagem */
+  margin-right: 10px; /* Aplica margem à direita da imagem */
+}
+
+.container-elemento div p:first-child {
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  color: #444; /* Define a cor do texto para um cinza mais escuro */
+}
+
+/* Parte de Pesquisa */
+.pesquisa {
+  width: 100%; /* Faz a pesquisa ocupar 100% da largura disponível */
+  display: flex; /* Utiliza Flexbox para o layout */
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  gap: 10px; /* Define um espaço de 10px entre os itens */
+  margin-top: 30px; /* Aplica margem superior à parte de pesquisa */
+}
+
+.pesquisa input {
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Define uma borda suave para o input */
+  outline: none; /* Remove o contorno padrão do input */
+  background-color: #fff; /* Define o fundo do input como branco */
+  color: #333; /* Define a cor do texto do input */
+  padding: 10px 20px; /* Aplica padding interno ao input */
+  height: 50px; /* Define a altura do input */
+  border-radius: 25px; /* Aplica bordas arredondadas ao input */
+  flex: 1; /* Faz o input ocupar o espaço disponível */
+  font-size: 14px; /* Define o tamanho da fonte do input */
+  transition: all 0.3s ease; /* Aplica uma transição suave para todas as propriedades */
+}
+
+.pesquisa input:focus {
+  border-color: #e3c37b; /* Altera a cor da borda quando o input está em foco */
+  box-shadow: 0 0 5px rgba(227, 195, 123, 0.5); /* Aplica sombra suave ao redor do input */
+}
+
+/* Melhorias no botão */
+.pesquisa button {
+  border: none; /* Remove a borda do botão */
+  outline: none; /* Remove o contorno do botão */
+  background-color: #fff; /* Define o fundo do botão como branco */
+  border-radius: 50%; /* Faz o botão ser circular */
+  width: 50px; /* Define a largura do botão */
+  height: 50px; /* Define a altura do botão */
+  display: flex; /* Utiliza Flexbox para o layout do botão */
+  align-items: center; /* Alinha os itens dentro do botão verticalmente */
+  justify-content: center; /* Alinha os itens dentro do botão horizontalmente */
+  cursor: pointer; /* Altera o cursor para uma mãozinha ao passar por cima */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Aplica transição suave para o botão */
+}
+
+.pesquisa button:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+  box-shadow: 0 0 10px rgba(227, 195, 123, 0.6); /* Aplica sombra mais forte ao botão */
+}
+
+.pesquisa button img {
+  width: 20px; /* Define a largura da imagem dentro do botão */
+}
+
+.pesquisa button:focus {
+  outline: 2px dashed #e3c37b; /* Aplica contorno visível ao botão quando está em foco */
+  outline-offset: 4px; /* Define a distância do contorno em relação ao botão */
+}
+
+/* Feedback para ícones */
+.container-elemento img,
+.pesquisa button img {
+  transition: transform 0.2s ease; /* Aplica uma transição suave para os ícones */
+}
+
+.pesquisa button:hover {
+  transform: scale(
+    1.05
+  ); /* Aumenta o tamanho dos ícones no botão ao passar o mouse */
+}
+
+/* Acessibilidade: Definir um foco visível */
+:focus {
+  outline: 2px dashed #e3c37b; /* Define um foco visível para melhor acessibilidade */
+  outline-offset: 4px; /* Define a distância do contorno em relação ao elemento */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px; /* Reduz o padding do container em telas menores */
+  }
+
+  .container-elemento {
+    flex-direction: column; /* Alinha os itens da previsão verticalmente */
+    align-items: center; /* Centraliza os itens da previsão */
+    text-align: center; /* Alinha o texto dos itens ao centro */
+  }
+
+  .container-elemento img {
+    margin-bottom: 10px; /* Aplica margem inferior nas imagens para espaçamento */
+  }
+}
